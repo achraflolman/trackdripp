@@ -1,82 +1,71 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
-  background: #f8f9fa;
-  color: #333;
+  background: #111;
+  color: #fff;
 }
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
 header {
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 1rem;
+  background: #000;
 }
-.nav-links {
+
+nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
-.nav-links li {
-  position: relative;
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  background: white;
-  padding: 0.5rem;
-}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.logo img {
-  height: 40px;
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 160px;
+  z-index: 1;
 }
-.btn {
-  background: #3366cc;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem;
 }
-.products {
+
+main {
+  padding: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
-.product {
-  background: white;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.fade-in {
-  animation: fadeIn 1s ease-in;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.chatbox {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background: white;
-  padding: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-}
-.chat-content {
-  display: none;
-}
-.chat-content input {
-  width: 100%;
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
 }
