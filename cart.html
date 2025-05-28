@@ -2,25 +2,19 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <title>Winkelwagen - TrackDrip</title>
+  <title>Winkelwagen | Trackdrip</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="index.html" class="logo"><img src="logo.avif" alt="Logo" /></a>
-      <ul class="nav-links">
-        <li><a href="shop.html">Shop</a></li>
-      </ul>
-    </nav>
+    <img src="logo.png" class="logo" onclick="location.href='index.html'" />
   </header>
-
   <main>
-    <h2>Jouw Winkelwagen</h2>
-    <div id="cartItems"></div>
-    <h3>Totaal: €<span id="cartTotal">0</span></h3>
+    <h1>Winkelwagen</h1>
+    <div id="cart-items"></div>
+    <h2 id="total"></h2>
     <button onclick="checkout()">Bestellen via WhatsApp</button>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
