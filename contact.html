@@ -2,23 +2,22 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact - TrackDrip</title>
+  <title>Contact | Trackdrip</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <a href="index.html" class="logo"><img src="logo.avif" alt="Logo" /></a>
-      <ul class="nav-links">
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="cart.html">Winkelwagen</a></li>
-      </ul>
-    </nav>
+    <img src="logo.png" class="logo" onclick="location.href='index.html'" />
   </header>
-
   <main>
-    <h2>Contact</h2>
-    <p>Heb je vragen? Neem contact op via Instagram, TikTok of mail ons op info@trackdrip.com</p>
+    <h1>Contacteer ons</h1>
+    <p>Heb je vragen? Stuur ons gerust een bericht.</p>
+    <form onsubmit="alert('Bericht verzonden!'); return false;">
+      <input type="text" placeholder="Naam" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Bericht" required></textarea>
+      <button type="submit">Verzenden</button>
+    </form>
   </main>
 </body>
 </html>
