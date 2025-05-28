@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrackDrip - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="fade-in">
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="logo.avif" alt="TrackDrip Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="shop.html">Shop</a>
+          <ul class="dropdown-content">
+            <li><a href="shop.html#nike">Nike</a></li>
+            <li><a href="shop.html#newbalance">New Balance</a></li>
+            <li><a href="shop.html#underarmour">Under Armour</a></li>
+            <li><a href="shop.html#asics">Asics</a></li>
+          </ul>
+        </li>
+        <li><a href="cart.html">Winkelwagen</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home fade-in">
+    <section class="hero">
+      <h1>Welkom bij TrackDrip</h1>
+      <p>Onze track, jouw drip.</p>
+      <a href="shop.html" class="btn">Shop nu</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TrackDrip. Volg ons op Instagram & TikTok.</p>
+  </footer>
+
+  <div class="chatbox">
+    <p>Chat met ons! <span onclick="openChat()">🗨️</span></p>
+    <div class="chat-content" id="chatBox">
+      <p>Hey! Waarmee kunnen we je helpen?</p>
+      <input type="text" placeholder="Typ hier..." />
+    </div>
+  </div>
+</body>
+</html>
