@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrackDrip - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <header class="fade-in">
-    <nav>
-      <a href="index.html" class="logo">
-        <img src="logo.avif" alt="TrackDrip Logo" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="shop.html">Shop</a>
-          <ul class="dropdown-content">
-            <li><a href="shop.html#nike">Nike</a></li>
-            <li><a href="shop.html#newbalance">New Balance</a></li>
-            <li><a href="shop.html#underarmour">Under Armour</a></li>
-            <li><a href="shop.html#asics">Asics</a></li>
-          </ul>
-        </li>
-        <li><a href="cart.html">Winkelwagen</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trackdrip | Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Trackdrip logo" class="logo" onclick="location.href='index.html'" />
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li class="dropdown">
+            <a href="#shop">Shop</a>
+            <ul class="dropdown-content">
+              <li><a href="#" onclick="filterByBrand('Nike')">Nike</a></li>
+              <li><a href="#" onclick="filterByBrand('Adidas')">Adidas</a></li>
+              <li><a href="#" onclick="filterByBrand('New Balance')">New Balance</a></li>
+              <li><a href="#" onclick="filterByBrand('Under Armour')">Under Armour</a></li>
+              <li><a href="#" onclick="filterByBrand('Asics')">Asics</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">🛒 Winkelwagen</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="home fade-in">
-    <section class="hero">
-      <h1>Welkom bij TrackDrip</h1>
-      <p>Onze track, jouw drip.</p>
-      <a href="shop.html" class="btn">Shop nu</a>
-    </section>
-  </main>
+    <main id="home">
+      <section class="intro fade-in">
+        <h1>Welkom bij Trackdrip</h1>
+        <p>De beste sportkleding van topmerken</p>
+        <button onclick="document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">Shop nu</button>
+      </section>
 
-  <footer>
-    <p>© 2025 TrackDrip. Volg ons op Instagram & TikTok.</p>
-  </footer>
+      <section id="shop" class="fade-in">
+        <h2>Onze Collectie</h2>
+        <div id="products" class="product-grid"></div>
+      </section>
+    </main>
 
-  <div class="chatbox">
-    <p>Chat met ons! <span onclick="openChat()">🗨️</span></p>
-    <div class="chat-content" id="chatBox">
-      <p>Hey! Waarmee kunnen we je helpen?</p>
-      <input type="text" placeholder="Typ hier..." />
-    </div>
-  </div>
-</body>
+    <footer>
+      <p>Volg ons op social media!</p>
+      <p>&copy; 2025 Trackdrip</p>
+    </footer>
+  </body>
 </html>
