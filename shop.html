@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shop - TrackDrip</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><img src="logo.avif" alt="Logo" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Winkelwagen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Shop Sportkleding</h2>
+    <div class="filters">
+      <button onclick="filterItems('all')">Alles</button>
+      <button onclick="filterItems('Nike')">Nike</button>
+      <button onclick="filterItems('New Balance')">New Balance</button>
+      <button onclick="filterItems('Under Armour')">Under Armour</button>
+      <button onclick="filterItems('Asics')">Asics</button>
+    </div>
+
+    <div class="products" id="productContainer">
+      <!-- Producten dynamisch toegevoegd via script.js -->
+    </div>
+  </main>
+</body>
+</html>
